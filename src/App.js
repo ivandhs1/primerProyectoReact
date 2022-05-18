@@ -1,14 +1,30 @@
-import logo from './logo.svg';
+
+import { Home } from './components/pages/Home/Home';
+import { NotFound } from './components/pages/NotFound/NotFound';
+import { About } from './components/pages/About/About';
+import { Contact } from './components/pages/Contact/Contact';
 import './index.css';
-import { ButtonUI } from './components/UI/ButtonUI/ButtonUI';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { HeaderHome } from './components/Layouts/HeaderHome/HeaderHome';
+import { Footer } from './components/Layouts/Footer/Footer';
+
+
 
 function App() {
   return (
-    <div className="appPadre">
-      <h1 className="h1appPadre">Hola</h1>
-      <h2 className="h2appPadre">Grupo</h2>
-      <h3 className="h3appPadre">Bienvenidos</h3>
-      <ButtonUI/>
+    <div>
+        <HeaderHome></HeaderHome>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='*' element={<NotFound/>}/>
+        </Routes>
+        <Footer></Footer>
     </div>
   );
 }
