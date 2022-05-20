@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { HeaderHome } from './components/Layouts/HeaderHome/HeaderHome';
 import { Footer } from './components/Layouts/Footer/Footer';
+import { Contador } from './components/pages/Contador/Contador';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/contador' element={<Contador/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer></Footer>

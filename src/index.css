@@ -22,20 +22,21 @@ code {
 }
 
 .headerHome{
-  background-color: rgb(0, 9, 131);
-  padding: 15px;
+  background-color: rgb(24, 24, 32);
+  padding: 5px;
   color: white;
   display: flex;
   align-items: center;
+  height: 11vh;
 }
 
 .logo{
-  width: 10%;
+  width: 5%;
   transition: 2s;
 }
 
 .logo:hover{
-  transform: rotate(1turn);
+  transform: rotate(5turn);
 }
 
 .ul{
@@ -61,8 +62,8 @@ li{
 
 li:hover{
   transform: scale(1.2,1.2);
-  background-color: rgba(0, 157, 248, 0.384);
-  border-radius: 5px;
+  background-color: rgba(123, 133, 138, 0.384);
+  border-radius: 10px;
 }
 
 a{
@@ -77,10 +78,12 @@ a:hover{
 
 .cajaMenu{
   margin-left: 35%;
+  gap:30%;
+  display: flex;
 }
 
 .footer{
-  background-color: rgb(0, 9, 131);
+  background-color: rgb(24, 24, 32);
   color: white;
   width: 100%;
   height: 50px;
@@ -91,6 +94,109 @@ a:hover{
   justify-content: center;
 }
 
+.container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  '. cajaContador .';
+}
+
+.cajaContador{
+  grid-area: cajaContador;
+  padding-top: 40%;
+}
+
+.number{
+  text-align: center;
+  font-size: 10vh;
+}
+
+.cajaBotones{
+  display: flex;
+  gap: 49px;
+  margin-top: 5%;
+}
+
+.btn{
+  width: 30%;
+  height: 5vh;
+  transition: 0.2s;
+}
+
+.btn:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.btnPositivo{
+  background-color: rgba(0, 128, 23, 0.508);
+  border-radius: 10px;
+}
+
+.btnReset{
+  background-color:rgba(0, 157, 255, 0.543);
+  border-radius: 10px;
+}
+
+.btnNegativo{
+  background-color:rgba(190, 31, 31, 0.464);
+  border-radius: 10px;
+}
+
+.switch{
+  background-color:white;
+}
+
+.cajaSwitch{
+  height:5vh;
+  width:5vh;
+  background-image: url('./components/images/switchoff.png');
+  background-size: cover;
+  transition: 1s;
+}
+
+body.darkMode{
+  background-color: rgb(0, 0, 0);
+}
+
+body.darkMode .headerHome {
+  background-color: white;
+}
+
+body.darkMode a{
+  color: black;
+}
+
+body.darkMode .cajaContador{
+  color:white;
+}
+
+body.darkMode .btnPositivo{
+  color: white;
+  border-color: white;
+  background-color: rgba(45, 225, 78, 0.67);
+}
+
+body.darkMode .btnReset{
+  color: white;
+  border-color: white;
+  background-color: rgba(72, 161, 217, 0.84);
+}
+
+body.darkMode .btnNegativo{
+  color: white;
+  border-color: white;
+  background-color: rgba(233, 58, 58, 0.628)
+}
+
+body.darkMode .footer{
+  background-color:white;
+  color: black;
+}
+
+body.darkMode .cajaSwitch{
+  background-image: url('./components/images/toggle_switch_on_icon_205914.png');
+}
 
 
 
