@@ -3,29 +3,32 @@ import { LogoUI } from '../../UI/LogoUI/LogoUI';
 import { LinksUI } from '../../UI/LinksUI/LinksUI';
 import { TitleUI } from '../../UI/TitleUI/TitleUI';
 import { SwitchUI } from '../../UI/SwitchUI/SwitchUI';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const HeaderHome = () => {
 
   const [theme, setTheme ] = useState(false);
 
   const modeDark = () => {
+    setTheme(!theme);
+  }
 
-    if(theme==false){
+  useEffect(() => {
+
+    if(theme){
       const btnSwitch = document.getElementById("btn");
-
       document.body.classList.add("darkMode");
       btnSwitch.classList.add("darkMode");
       setTheme(true);
     }else{
       const btnSwitch = document.getElementById("btn");
-
       document.body.classList.remove("darkMode");
       btnSwitch.classList.remove("darkMode");
       setTheme(false);
     }
 
-  }
+  }, [theme])
+  
 
   return (
     <div className='headerHome'>

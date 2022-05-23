@@ -8,7 +8,7 @@ export const Ejercicios = () => {
       <br />
       <div className='cajaLinkEjercicio'>
         <LinksUI  styleli="linkEjercicio" references="/Carrito" style="linkEjercicios" text="Carrito"></LinksUI>
-        
+        <LinksUI styleli="linkEjercicio" references="/ContadorUseEffect" style="linkEjercicios" text="ContadorUseEffect"></LinksUI>
       </div>
     </div>
   )

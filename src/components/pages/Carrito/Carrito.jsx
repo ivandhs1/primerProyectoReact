@@ -92,7 +92,7 @@ export const Carrito = () => {
       <h4>Hay {products} productos</h4>
       <Select
         className='cajaSelect'
-        defaultValue={"S"}
+        defaultValue={"Option"}
         isDisabled={false}
         name="fruits"
         options={fruits}
