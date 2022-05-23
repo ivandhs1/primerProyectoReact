@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-bottom: 5%;
 
 }
 
@@ -54,13 +55,13 @@ h1:hover{
   transform: scale(1.1,1.1);
 }
 
-li{
+.li{
   padding: 5px;
   list-style: none;
   transition: 0.2s;
 }
 
-li:hover{
+.li:hover{
   transform: scale(1.2,1.2);
   background-color: rgba(123, 133, 138, 0.384);
   border-radius: 10px;
@@ -77,8 +78,8 @@ a:hover{
 }
 
 .cajaMenu{
-  margin-left: 35%;
-  gap:30%;
+  margin-left: 14%;
+  gap: 9%;
   display: flex;
 }
 
@@ -155,6 +156,109 @@ a:hover{
   transition: 1s;
 }
 
+.linkEjercicio{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.linkEjercicios{
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  width: 20%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+  padding: 5px;
+}
+
+.h2Ejercicios{
+  text-align: center;
+  
+}
+
+.cajaEjercicios{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.cajaLinkEjercicio{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cajaCarrito{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cajaCarrito h3{
+  font-size: 3vh;
+}
+
+.cajaSelect{
+  width: 30%;
+}
+
+.container-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.card-product{
+  width: 100%;
+  height: 32vh;
+  border: 2px solid rgba(45, 225, 78, 0.67);
+  border-radius: 15px;
+  background-color: rgb(116, 241, 116);
+  padding: 5px;
+}
+
+.img-product{
+  width: 100%;
+  height: 18vh;
+  border-radius: 15px;
+}
+
+.name-product{
+  text-align: center;
+  font-size: 4vh;
+}
+
+.price-product{
+  text-align: center;
+}
+
+.btn-card{
+  text-align: center;
+  margin-left: 25%;
+  padding: 5px;
+  background-color: rgba(172, 255, 47, 0.596);
+  border: 1px solid rgb(59, 82, 26) ;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.btn-card:hover{
+  transform: scale(1.1,1.1);
+}
+
+
+
 body.darkMode{
   background-color: rgb(0, 0, 0);
 }
@@ -197,6 +301,8 @@ body.darkMode .footer{
 body.darkMode .cajaSwitch{
   background-image: url('./components/images/toggle_switch_on_icon_205914.png');
 }
+
+
 
 
 

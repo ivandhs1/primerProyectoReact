@@ -1,17 +1,17 @@
 
 import { Home } from './components/pages/Home/Home';
 import { NotFound } from './components/pages/NotFound/NotFound';
-import { About } from './components/pages/About/About';
+import { Ejercicios } from './components/pages/Ejercicios/Ejercicios';
 import { Contact } from './components/pages/Contact/Contact';
 import './index.css';
 import {
-  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
 import { HeaderHome } from './components/Layouts/HeaderHome/HeaderHome';
 import { Footer } from './components/Layouts/Footer/Footer';
 import { Contador } from './components/pages/Contador/Contador';
+import { Carrito } from './components/pages/Carrito/Carrito';
 
 
 
@@ -21,9 +21,10 @@ function App() {
         <HeaderHome></HeaderHome>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/ejercicios' element={<Ejercicios/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/contador' element={<Contador/>}/>
+          <Route path='/carrito' element={<Carrito/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer></Footer>

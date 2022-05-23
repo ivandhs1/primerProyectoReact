@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export const LinksUI = ({references, text}) => {
+export const LinksUI = ({styleli,references,style, text}) => {
   return (
     <>
-        <li ><Link to={references}>{text}</Link></li>
+        <li className={styleli} ><Link to={references} className={style}>{text}</Link></li>
     </>
   )
 }
