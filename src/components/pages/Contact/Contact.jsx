@@ -1,9 +1,10 @@
 import React from 'react'
+import { ContactUI } from '../../UI/ContactUI/ContactUI'
 
 export const Contact = () => {
   return (
     <div className="contact">
-      Bienvenidos a Contact
+      <ContactUI></ContactUI>
     </div>
   )
 }

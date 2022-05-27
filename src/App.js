@@ -12,6 +12,7 @@ import { HeaderHome } from './components/Layouts/HeaderHome/HeaderHome';
 import { Footer } from './components/Layouts/Footer/Footer';
 import { Contador } from './components/pages/Contador/Contador';
 import { Carrito } from './components/pages/Carrito/Carrito';
+import { RickAndMorty } from './components/pages/RickAndMorty/RickAndMorty';
 import { ContadorUseEffect } from './components/pages/ContadorUseEffect/ContadorUseEffect';
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/contador' element={<Contador/>}/>
           <Route path='/carrito' element={<Carrito/>}/>
           <Route path='/contadorUseEffect' element={<ContadorUseEffect/>}/>
+          <Route path='/rickAndMorty' element={<RickAndMorty/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer></Footer>
