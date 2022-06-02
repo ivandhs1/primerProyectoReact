@@ -10,6 +10,7 @@ export const Ejercicios = () => {
         <LinksUI  styleli="linkEjercicio" references="/Carrito" style="linkEjercicios" text="Carrito"></LinksUI>
         <LinksUI styleli="linkEjercicio" references="/ContadorUseEffect" style="linkEjercicios" text="ContadorUseEffect"></LinksUI>
         <LinksUI styleli="linkEjercicio" references="/RickAndMorty" style="linkEjercicios" text="RickAndMorty"></LinksUI>
+        <LinksUI styleli="linkEjercicio" references="/ApiTenor" style="linkEjercicios" text="ApiTenor"></LinksUI>
       </div>
     </div>
   )

@@ -14,6 +14,7 @@ import { Contador } from './components/pages/Contador/Contador';
 import { Carrito } from './components/pages/Carrito/Carrito';
 import { RickAndMorty } from './components/pages/RickAndMorty/RickAndMorty';
 import { ContadorUseEffect } from './components/pages/ContadorUseEffect/ContadorUseEffect';
+import { ApiTenor } from './components/pages/ApiTenor/ApiTenor';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route path='/carrito' element={<Carrito/>}/>
           <Route path='/contadorUseEffect' element={<ContadorUseEffect/>}/>
           <Route path='/rickAndMorty' element={<RickAndMorty/>}/>
+          <Route path='/apiTenor' element={<ApiTenor/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
         <Footer></Footer>
